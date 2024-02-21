@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('环境检测阶段'){
+            steps{
+                echo    "环境检测阶段";
+            }
+        }
         stage('构建阶段') {
             steps {
                 //
